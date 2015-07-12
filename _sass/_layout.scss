@@ -11,7 +11,7 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: $base-4-font-size;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -47,7 +47,6 @@
         right: 30px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
-        border-radius: 5px;
         text-align: right;
 
         .menu-icon {
@@ -97,7 +96,7 @@
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: $base-2-font-size;
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -108,7 +107,7 @@
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
+    font-size: $base-0-font-size;
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
@@ -121,18 +120,23 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+    width:         calc(30% - (#{$spacing-unit} / 2));
+	// Originally 35%
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+	text-align: center;
+    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+    width:         calc(40% - (#{$spacing-unit} / 2));
+	// Originally 20%
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+	text-align: right;
+    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+    width:         calc(30% - (#{$spacing-unit} / 2));
+	// Originally 45%
 }
 
 @include media-query($on-laptop) {
@@ -166,7 +170,7 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: $base-3-font-size;
 }
 
 .post-list {
@@ -179,13 +183,13 @@
 }
 
 .post-meta {
-    font-size: $small-font-size;
+    font-size: $base-0-font-size;
     color: $grey-color;
 }
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: $base-3-font-size;
 }
 
 
@@ -198,39 +202,40 @@
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: $base-6-font-size;
     letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: $base-5-font-size;
     }
 }
 
 .post-content {
+    font-family: $post-font-family;
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: $base-4-font-size;
 
         @include media-query($on-laptop) {
-            font-size: 28px;
+            font-size: $base-3-font-size;
         }
     }
 
     h3 {
-        font-size: 26px;
+        font-size: $base-3-font-size;
 
         @include media-query($on-laptop) {
-            font-size: 22px;
+            font-size: $base-2-font-size;
         }
     }
 
     h4 {
-        font-size: 20px;
+        font-size: $base-2-font-size;
 
         @include media-query($on-laptop) {
-            font-size: 18px;
+            font-size: $base-font-size;
         }
     }
 }

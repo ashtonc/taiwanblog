@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Photo Journal
-permalink: /photojournal/
+title: Gallery
+permalink: /gallery/
 ---
 
 Something photos something new layout
