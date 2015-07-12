@@ -2,13 +2,12 @@
 title: Taiwan Blog
 email: ashton@ashtonc.ca
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Source hosted on [GitHub](https://github.com/ashtonc/taiwanblog).
 baseurl: "/taiwan" # the subpath of your site, e.g. /blog/
 url: "http://ashtonc.ca" # the base hostname & protocol for your site
 twitter_username: ashtonabc
 github_username:  ashtonc
+paginate: 4
 
 # Build settings
 markdown: kramdown
