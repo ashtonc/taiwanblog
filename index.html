@@ -5,10 +5,10 @@ layout: default
 <div class="home">
 	<ul class="post-list">
 		{% for post in paginator.posts %}
-		<li>
-			<h2 class="post-title">
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</h2>
+		<li class="index-post">
+			<h1>
+				<a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h1>
 			<p class="post-meta">{{ post.date | date: "%Y %b %-d" }}</p>
 			<article class="post-content">
 				{{ post.content }}

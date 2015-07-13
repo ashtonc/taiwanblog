@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<script type="text/javascript" src="{{ "/assets/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/jquery.mousewheel-3.0.6.pack.js" | prepend: site.baseurl }}"></script>
+<link rel="stylesheet" href="{{ "/assets/fancybox/jquery.fancybox.css" | prepend: site.baseurl }}" type="text/css" media="screen" />
+<script type="text/javascript" src="{{ "/assets/fancybox/jquery.fancybox.pack.js" | prepend: site.baseurl }}"></script>
+<link rel="stylesheet" href="{{ "/assets/fancybox/helpers/jquery.fancybox-buttons.css" | prepend: site.baseurl }}" type="text/css" media="screen" />
+<script type="text/javascript" src="{{ "/assets/fancybox/helpers/jquery.fancybox-buttons.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/fancybox/helpers/jquery.fancybox-media.js" | prepend: site.baseurl }}"></script>
+<link rel="stylesheet" href="{{ "/assets/fancybox/helpers/jquery.fancybox-thumbs.css" | prepend: site.baseurl }}" type="text/css" media="screen" />
+<script type="text/javascript" src="{{ "/assets/fancybox/helpers/jquery.fancybox-thumbs.js" | prepend: site.baseurl }}"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect		: 'none',
+		openEffect		: 'none',
+		prevEffect		: 'none',
+		nextEffect		: 'none',
+		closeBtn		: false,
+		helpers		: {
+			title	: { type : 'inside' },
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+});
+</script>
+
+{% for gallery in site.data.galleries %}
+	{% if gallery.id == page.galleryid %}
+	<h1 class="post-title">{{ gallery.description }}</h1>
+		<ul>
+			{% for image in gallery.images %}
+			<li>
+				<a class="fancybox" href="{{ gallery.imagefolder | prepend: site.baseurl }}/{{ image.name }}" data-fancybox-group="gallery{{ gallery.id }}" title="{{ image.text }}">
+					<img src="{{ gallery.imagefolder | prepend: site.baseurl }}/{{ image.thumb }}">
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+{% endfor %}

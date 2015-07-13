@@ -1,5 +1,5 @@
 # Site settings
-title: Taiwan Blog
+title: AC Taiwan
 email: ashton@ashtonc.ca
 description: > # this means to ignore newlines until "baseurl:"
   Source hosted on [GitHub](https://github.com/ashtonc/taiwanblog).
@@ -8,6 +8,9 @@ url: "http://ashtonc.ca" # the base hostname & protocol for your site
 twitter_username: ashtonabc
 github_username:  ashtonc
 paginate: 4
+
+# Files
+exclude: [README.md]
 
 # Build settings
 markdown: kramdown
