@@ -265,3 +265,61 @@
         }
     }
 }
+
+
+
+/**
+ * Gallery
+ */
+
+#gallerycontainer {
+	text-align: center;
+}
+
+.gallerylist {
+	list-style: none;
+	margin: 0;
+}
+
+.galleryitem {
+	padding: 10px;
+	float: left;
+	display: inline-block;
+}
+
+.galleryimage {
+	box-sizing: border-box;
+	height: 120px;
+	width: 120px;
+	border: 2px solid #fff;
+	outline: 1px solid #444;
+}
+
+
+
+/**
+ * Index of Posts
+ */
+
+.post-list-index {
+	list-style: none;
+	margin-top: 20px;
+	margin-left: 0;
+}
+
+.post-single {
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}
+
+.post-single-meta {
+    font-size: $base-0-font-size;
+    color: $grey-color;
+	margin-right: 10px;
+}
+
+.post-single-title {
+    font-size: $base-2-font-size;
+    color: $grey-color-dark;
+}

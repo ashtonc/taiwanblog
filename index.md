@@ -4,8 +4,8 @@ title: Index
 permalink: /index/
 ---
 
-This page will contain a link to all previous posts made on this site.
-
+<ul class="post-list-index">
 {% for post in site.posts %}
-  * {{ post.date | date_to_string }} - [ {{ post.title }} ]({{ post.url | prepend: site.baseurl }})
+	<li class="post-single"><a href="{{ post.url | prepend: site.baseurl }}"><span class="post-single-meta">{{ post.date | date_to_string }}</span><span class="post-single-title">{{ post.title }}</span></a></li>
 {% endfor %}
+</ul>

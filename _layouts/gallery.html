@@ -13,35 +13,38 @@ layout: default
 <script type="text/javascript" src="{{ "/assets/fancybox/helpers/jquery.fancybox-thumbs.js" | prepend: site.baseurl }}"></script>
 
 <script type="text/javascript">
-$(document).ready(function() {
-	$(".fancybox").fancybox({
-		openEffect		: 'none',
-		openEffect		: 'none',
-		prevEffect		: 'none',
-		nextEffect		: 'none',
-		closeBtn		: false,
-		helpers		: {
-			title	: { type : 'inside' },
-			thumbs	: {
-				width	: 50,
-				height	: 50
+	$(document).ready(function() {
+		$(".fancybox").fancybox({
+			openEffect		: 'none',
+			openEffect		: 'none',
+			prevEffect		: 'none',
+			nextEffect		: 'none',
+			closeBtn		: false,
+			helpers		: {
+				title	: { type : 'inside' },
+				thumbs	: {
+					width	: 50,
+					height	: 50
+				}
 			}
-		}
+		});
 	});
-});
 </script>
 
+
 {% for gallery in site.data.galleries %}
-	{% if gallery.id == page.galleryid %}
-	<h1 class="post-title">{{ gallery.description }}</h1>
-		<ul>
-			{% for image in gallery.images %}
-			<li>
-				<a class="fancybox" href="{{ gallery.imagefolder | prepend: site.baseurl }}/{{ image.name }}" data-fancybox-group="gallery{{ gallery.id }}" title="{{ image.text }}">
-					<img src="{{ gallery.imagefolder | prepend: site.baseurl }}/{{ image.thumb }}">
-				</a>
-			</li>
-			{% endfor %}
-		</ul>
+{% if gallery.id == page.galleryid %}
+<h1 class="post-title">{{ gallery.description }}</h1>
+<div id="gallerycontainer">
+	<ul class="gallerylist">
+		{% for image in gallery.images %}
+		<li class="galleryitem">
+			<a class="fancybox" href="{{ gallery.imagefolder | prepend: site.baseurl }}/{{ image.name }}" data-fancybox-group="gallery{{ gallery.id }}" title="{{ image.text }}">
+				<img class="galleryimage" src="{{ gallery.imagefolder | prepend: site.baseurl }}/{{ image.thumb }}">
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
 	{% endif %}
-{% endfor %}
+	{% endfor %}
+</div>
