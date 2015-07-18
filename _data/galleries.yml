@@ -4,7 +4,7 @@
   images:
   - name: image-1.png
     thumb: thumb-1.png
-    text: The first image
+    text: <strong>2014-12-01</strong> - The first image
   - name: image-2.png
     thumb: thumb-2.png
     text: The second image
@@ -35,36 +35,7 @@
   - name: image-2.png
     thumb: thumb-2.png
     text: The second image
-  - name: image-3.png
-    thumb: thumb-3.png
-    text: The third image
-  - name: image-1.png
-    thumb: thumb-1.png
-    text: The first image
-  - name: image-2.png
-    thumb: thumb-2.png
-    text: The second image
-  - name: image-3.png
-    thumb: thumb-3.png
-    text: The third image
-  - name: image-1.png
-    thumb: thumb-1.png
-    text: The first image
-  - name: image-2.png
-    thumb: thumb-2.png
-    text: The second image
-  - name: image-3.png
-    thumb: thumb-3.png
-    text: The third image
-  - name: image-1.png
-    thumb: thumb-1.png
-    text: The first image
-  - name: image-2.png
-    thumb: thumb-2.png
-    text: The second image
-  - name: image-3.png
-    thumb: thumb-3.png
-    text: The third image
+
 
 - id: examplegallery2
   description: This is even another gallery!
