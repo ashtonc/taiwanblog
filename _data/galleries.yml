@@ -5,6 +5,15 @@
   - name: image-1.png
     thumb: thumb-1.png
     text: <strong>2014-12-01</strong> - The first image
+
+
+- id: album-example
+  description: Example album
+  imagefolder: /images
+  images:
+  - name: image-1.png
+    thumb: thumb-1.png
+    text: <strong>2014-12-01</strong> - The first image
   - name: image-2.png
     thumb: thumb-2.png
     text: The second image
