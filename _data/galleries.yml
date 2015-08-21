@@ -2,9 +2,12 @@
   description: Album
   imagefolder: /images
   images:
-  - name: image-1.png
-    thumb: thumb-1.png
-    text: <strong>2014-12-01</strong> - The first image
+  - name: 2015-08-18-13.04.58.jpg
+    thumb: 2015-08-18-13.04.58-thumb.jpg
+    text: <strong>2015-08-18</strong> - Driving back to Calgary (1/2)
+  - name: 2015-08-18-13.06.36.jpg
+    thumb: 2015-08-18-13.06.36-thumb.jpg
+    text: <strong>2015-08-18</strong> - Driving back to Calgary (2/2)
 
 
 - id: album-example
